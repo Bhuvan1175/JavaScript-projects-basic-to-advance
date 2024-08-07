@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  h1 {
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+  }
+
+  /* Blink Heading */
+  
+  @keyframes blink {
+    0% {
+      color: chartreuse;
+    }
+    25% {
+      color:cyan;
+    }
+    50% {
+      color:goldenrod;
+    }
+    75% {
+      color:darkcyan;
+    }
+    100% {
+      color:lightcoral;
+    }
+  }
+  
+  h1{
+    animation: blink 5s infinite;
+  }
+  
+  /* Images Styling  */
+  
+  .choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .choices {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .choice:hover {
+    background-color: azure;
+    cursor: pointer;
+  }
+  
+  /* Score Board */
+  
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 4rem;
+  }
+  
+  /* Message Container */
+  
+  .msg-container {
+    margin-top: 3rem;
+  }
+  #msg {
+    background-color: aliceblue;
+    color: black;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-bottom: solid 1px #aaa;
+    background-color: #eee;
+    margin-bottom: 0;
+}
+
+nav a {
+    display: inline-block;
+    min-width: 9rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: solid 1px rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+.home {
+    color: #000;
+    background-color: #d4d4d4;
+}
+  
