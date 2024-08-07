@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page-Dark-Light-Mode</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="light-mode">
+    <nav> 
+        <a href="/index.html" class="home" id="a">Home</a>
+        <a class="setting" id="modeToggle">
+            <i class="fa-solid fa-sun" id="sunIcon"></i>
+            <i class="fa-solid fa-moon" id="moonIcon" style="display: none"></i>
+          </a>
+            <a target="_blank" href="https://t.me/EzcodingCorner" id="a">Join Me</a>
+    </nav>
+    <form class="container">
+        <h1>Login</h1><br>
+        <label>Email or Phone</label><br>
+        <input type="text" value="" id="email" required><br><br>
+        <label>Password</label><br>
+        <input type="password" value="" id="password" required><br><br><br>
+        <button>Login</button><br><br>
+        <div class="signup">
+            <p>Not a member?</p>
+            <p style="color:#1273f2;">Signup now</p>
+        </div>
+        <div id="orlogin">
+            <p class="orlogin">or Login using</p>
+            <a href="https://www.facebook.com/" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.google.com/" target="_blank" style="text-decoration: none;">
+                <i class="fab fa-google"></i>
+            </a>
+        </div>
+    </form>
+    <script src="form.js"></script>
+</body>
+
+</html>
